@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <mata charset="UTF-8">
+ <title>回路図</title>
+</head>
+<body>
+  <div style="display: flex;">
+  <article style="width: 75%; margin-left: 10px;" >
+<h1>Adder 0~18 &ensp;(calcu1)</h1>
+<div style="margin-right: 200px;background-color: #fff9d1;margin-bottom: 30px;padding-bottom:1px;">
+<p style="position: relative;top: 10px;left: 10px;margin-bottom: 20px;">回路構成</p>
+<ul style="position: relative;">
+  <li><a href="#input-part">input-part</a></li>
+  <li>add-part</li>
+  <li>7seg-part</li>
+</ul>
+</div>
+<p style="border-top: 1px dashed;margin-right: 100px"></p>
+<h3 id="input-part">input-part</h3>
+<h4>回路図</h4>
+<img src="input-part.png" width="400"><br>
+<a href="pcb_picture.png">pcb画像</a>
+<div style="border: 1px solid;position:relative;margin-top: 20px;margin-right: 100px;z-index: 1;">
+<p style="position: absolute;top: -27px;left: 10px;padding-left: 2px;padding-right: 2px;z-index: 2;background-color: white;"><b>Parts-table</b></p>
+<p style="padding-left: 10px;">
+CD4072BM96 * 2<br>
+SS8050G * 9<br>
+Resistor_500Ohm , 4.3kOhm 0402 * 9<br>
+SPDT switch OS102011MS2QN1 * 9<br>
+NL27WZ32USGQ * 1<br>
+conn_1x4pin , 1x2pin * 1<br>
+</p>
+</div>
+</article>
+<aside style="margin-top: 100px; width: 25%;">
+  <p style="padding-top: 10px;border-top: 2px solid;">circuit</p>
+  <ul>
+    <li><a href="index.html">calcu1</a></li>
+  </ul>
+  <br><br>
+  <p style="padding-top: 10px;border-top: 2px solid;">memo</p>
+  <ul>
+    <li><a href="rc.html">RC回路の計算</a></li>
+  </ul>
+</aside>
+</div>
+</body>
+</html>

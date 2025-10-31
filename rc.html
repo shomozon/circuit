@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title>RC回路</title>
+ <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<h3>RC回路の計算</h3>
+<img src="rc.png" width="250">
+<p>
+\(t = 0 \)で、\( V_C = 0 \) とし、\( V_0 = R\dfrac{dQ}{dt} + \dfrac{Q}{C} \)<br><br>
+\( \dfrac{dt}{dQ} = \dfrac{R}{V_0 - \frac{Q}{C}} \)<br><br>
+\( A = V_0 - \dfrac{Q}{C} \)とすると、\( \dfrac{dA}{dt} = -\dfrac{1}{C}\dfrac{dQ}{dt} \)なので、<br><br>
+\( \dfrac{dt}{dQ} = -\dfrac{1}{C}\dfrac{dt}{dA} \) から、\( -\dfrac{1}{C}\dfrac{dt}{dA} = \dfrac{R}{A} \) <br><br>
+両辺をAに関して積分すると、 \( t = -CR\log A + C_0 \)<br><br>
+\( t = 0 \) の時、 \( A = V_0 \) なので、 \( C_0 = CR\log V_0 \)<br><br>
+\( t = CR\log V_0 - CR\log A = -CR\log \dfrac{A}{V_0} \Leftrightarrow
+e^{-\frac{t}{CR}} = \dfrac{A}{V_0} \Leftrightarrow
+V_C = V_0(1 - e^{-\frac{t}{CR}}) \) <br><br>
+また、\( t = -CR\log \Big(1 - \dfrac{V_C}{V_0}\Big) \) <br><br>
+\( V_0 = 5, V_C = 3 \)の時、\( t = -RC\log 0.6 \simeq 0.221RC\) <br><br>
+\( t = 0.1\rm ms \)では、\( R = 10\rm k\Omega, C = 50\rm pF \) <br><br>
+\( V_0 = 5, V_C = 2 \)の時、\( t = -RC\log 0.4 \simeq 0.397RC\) <br><br>
+
+</p>
+<br><br>
+<a href="index.html">戻る</a><br>
+</body>
+</html>
