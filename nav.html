@@ -1,0 +1,33 @@
+<style>
+nav {
+  position: relative;
+  z-index: 2;
+}
+.menu {
+  list-style: none;
+}
+nav ul li:hover .submenu {
+  display: inline-block;
+}
+.submenu {
+  position: absolute;
+  background-color: #fdfdfd;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  top: 100%;
+  display: none;
+}
+</style>
+<nav>
+  <ul class="menu">
+    <li>
+      <p>回路図</p>
+      <ul class="submenu">
+        <li><a href="index.html">calcu1</a></li>
+        <li><a href="index2.html">calcu type2</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>

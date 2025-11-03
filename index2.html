@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <title></title>
+</head>
+<body>
+  <div id="nav-container"></div>
+  <script>
+    fetch('nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('nav-container').innerHTML = html;
+      });
+  </script>
+  <div style="display: flex;">
+  <article style="width: 75%;" >
+<div style="margin-left: 10px;">
+<h1>Adder 0~18 &ensp;(calcu type2)</h1>
+<h3 id="addpart">addpart</h3>
+<img src="addpart1.pdf" width="500">
+</div>
+</article>
+<aside style="margin-top: 100px; width: 25%;">
+  <p style="padding-top: 10px;border-top: 2px solid;">circuit</p>
+  <ul>
+    <li><a href="index.html">calcu1</a></li>
+    <li><a href="index2.html">calcu type2 </a></li>
+  </ul>
+  <br><br>
+  <p style="padding-top: 10px;border-top: 2px solid;">memo</p>
+  <ul>
+    <li><a href="rc.html">RC回路の計算</a></li>
+  </ul>
+</aside>
+</div>
+</body>
+</html>

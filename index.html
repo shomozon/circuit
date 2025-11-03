@@ -5,8 +5,42 @@
  <title>回路図</title>
 </head>
 <body>
+<style>
+nav {
+  position: relative;
+  z-index: 2;
+}
+.menu {
+  list-style: none;
+}
+nav ul li:hover .submenu {
+  display: inline-block;
+}
+.submenu {
+  position: absolute;
+  background-color: #fdfdfd;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  top: 100%;
+  display: none;
+}
+</style>
+<nav>
+  <ul class="menu">
+    <li>
+      <p>回路図</p>
+      <ul class="submenu">
+        <li><a href="index.html">calcu1</a></li>
+        <li><a href="index2.html">calcu type2</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   <div style="display: flex;">
-  <article style="width: 75%; margin-left: 10px;" >
+  <article style="width: 75%;" >
+<div style="margin-left: 10px;">
 <h1>Adder 0~18 &ensp;(calcu1)</h1>
 <div style="margin-right: 200px;background-color: #fff9d1;margin-bottom: 30px;padding-bottom:1px;">
 <p style="position: relative;top: 10px;left: 10px;margin-bottom: 20px;">回路構成</p>
@@ -32,11 +66,14 @@ NL27WZ32USGQ * 1<br>
 conn_1x4pin , 1x2pin * 1<br>
 </p>
 </div>
+<img src="addpart1.pdf" width="500">
+</div>
 </article>
 <aside style="margin-top: 100px; width: 25%;">
   <p style="padding-top: 10px;border-top: 2px solid;">circuit</p>
   <ul>
     <li><a href="index.html">calcu1</a></li>
+    <li><a href="index2.html">calcu type2 </a></li>
   </ul>
   <br><br>
   <p style="padding-top: 10px;border-top: 2px solid;">memo</p>
