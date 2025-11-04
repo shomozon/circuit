@@ -1,3 +1,9 @@
+article {
+  margin-left: 10px;
+}
+
+/* ------- 1 ------- */
+
 .ol {
   margin-right: 200px;
 }
@@ -11,6 +17,9 @@
   margin-left: 10px;
 }
 
-article {
+/* ------- 2 ------- */
+
+#img_addpart {
+  width: 500px;
   margin-left: 10px;
 }
